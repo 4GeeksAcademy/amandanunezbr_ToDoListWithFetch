@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f6f6;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header h1 {
+    font-size: 80px;
+    font-weight: 100;
+    color: #ead7d7;
+    margin: 20px;
+}
+
+.todo-list {
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.todo-list input {
+    width: 100%;
+    padding: 15px 55px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 1px solid #f5cecd;
+    box-sizing: border-box;
+}
+
+.todo-list input::placeholder {
+    color: #cccccc;
+    font-style: italic;
+}
+
+.todo-list input:focus {
+    outline: none;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 55px;
+    border-bottom: 1px solid #f5cecd;
+    font-size: 24px;
+    color: #4d4d4d;
+}
+
+.delete-btn {
+    visibility: hidden;
+    background: none;
+    border: none;
+    color: #cc9a9a;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.todo-item:hover .delete-btn {
+    visibility: visible;
+}
+
+.delete-btn:hover {
+    color: #af5b5e;
+}
+
+.todo-count {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el botón Clear All */
+.clear-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f5cecd;
+    border: none;
+    color: #4d4d4d;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px; /* Espacio para separar de la lista */
+}
+
+.clear-btn:hover {
+    background-color: #af5b5e;
+    color: white;
+}
+
+.clear-btn:focus {
+    outline: none;
+}
